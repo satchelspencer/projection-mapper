@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>projection mapper - demo</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="mapper.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.container').projectionMap([
+					100,100,
+					500,200,
+					450,600,
+					200,500
+				]);
+			});
+		</script>
+		<style type="text/css">
+			Body{
+				margin:0;
+				background:black;
+			}
+			.container{	
+				border:5px solid white;
+				box-shadow: 0 0 20px 20px #222020;
+				transform-origin:0 0 0;
+				position:absolute;
+				margin:0;
+				width:500px;
+				height:500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container"></div>
+	</body>
+</html>
