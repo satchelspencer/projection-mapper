@@ -2,10 +2,10 @@
 <html>
 	<head>	
 		<title>projection mapper - demo</title>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="file:///Volumes/5400/WWW/lyconos/lyconos/www/lib/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="mapper.js"></script>
 		<script type="text/javascript">
-			$(function(){
+			$(window).ready(function(){
 				$('.container').projectionMapGui();
 			});
 		</script>
@@ -15,16 +15,20 @@
 				background:black;
 			}
 			.container{	
-				background:white;
 				transform-origin:0 0 0;
 				position:absolute;
 				margin:0;
-				width:500px;
-				height:500px;
+				width:1500px;
+				height:844px;
+			}
+			.video{	
+				width:100%;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container"></div>
+		<div class="container">
+		<video class="video" controls="" autoplay="" name="media"><source src="file://localhost/Users/satchelspencer/Desktop/test.mp4" type="video/mp4"></video>
+		</div>
 	</body>
 </html>
